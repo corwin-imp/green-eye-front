@@ -1,0 +1,51 @@
+export type IOrder = {
+    id: number | string;
+    orderType: number;
+    name: string;
+
+    caseNumber: string;
+    caseNumberValidityFrom: string;
+    caseNumberValidityTo: string;
+    orderSubtype: string;
+    orderDate: string;
+    authorizationDateRequest: string;
+    authorizationDate: string;
+    maximumAvailableHours?: number;
+    'student.lastName'?: string;
+    authorizationSource: number;
+    allocatedPeriod: number;
+    allocatedHours: number;
+    allocatedMoney: number;
+    status: number | string;
+    note: string | null;
+    createdAt: string;
+    updatedAt: string;
+    created: string;
+    updated: string | null;
+};
+
+export type IOrderSend = {
+    id: number | string;
+    maximumAvailableHours: number;
+    orderType: number | string;
+    name: string;
+    student: string | number;
+    caseNumber: string;
+    caseNumberValidityFrom: string;
+    caseNumberValidityTo: string;
+    orderSubtype: number | string;
+    orderDate: string;
+    authorizationDateRequest: string;
+    authorizationDate: string;
+    authorizationSource: number | string;
+    allocatedPeriod: number | string;
+    allocatedHours: number;
+    allocatedMoney: number;
+    status: number | string;
+    note: string | null;
+    serviceType: number | string;
+    createdAt: string;
+    updatedAt: string;
+    created: string;
+    updated: string | null;
+};
