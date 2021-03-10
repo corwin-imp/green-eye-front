@@ -1,0 +1,47 @@
+@import '../../../../../components/assets/variables';
+
+.login {
+}
+.authContent{
+
+}
+.heading {
+    color: $main-color;
+    font-size: 72px;
+    font-weight: bold;
+
+    @media (max-width: 767px) {
+        text-align: center;
+        font-size: 32px;
+    }
+}
+
+.subHeading {
+    color: #606061;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    @media (max-width: 767px) {
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+.note {
+    text-align: center;
+    color: #606061;
+    font-size: 18px;
+}
+
+.noteHeading {
+    color: $main-color;
+    font-size: 22px;
+}
+
+.loginWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
